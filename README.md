@@ -4,14 +4,15 @@ A "Cate West: The Vanishing Files" stack smash exploit for the Nintendo DS that 
 > These are ARM9 exploits that takes over a NDS mode cartridge. These type of exploits are very limited since there's no SD or NAND access. They can be used to run a small payload. These exploits are almost useless, but still fun :)
 
 ## Exploit/Vulnerability Detail:
-> ## Stack smash via unchecked string-length<br><br>
+> ## Stack smash via unchecked string-length<br>
 > *"The savedata contains multiple ASCII strings, mostly for the player slot names and high-score data. The string lengths of these vectors are not checked, so one can use a very large string to overwrite the stack and execute unsigned code."*
 >
-> This iteration of the exploit only targets the high-score data. I found that working with the high-score data was more beneficial for manipulating the stack, rather than working with the profile slot names. (They are are still exploitable).
+> This iteration of the exploit only targets the high-score data. I found that working with the high-score data was more beneficial for manipulating the stack, rather than working with the profile slot names.
+>(They are are still exploitable).
 ###
 ## Requirements:
 * A copy of the `Cate West: The Vanishing Files` NDS game (US Version only).
-* Any DS that's in the NDS family (NDS, NDSL, DSi, DSiXL, 3DS, 3DSXL, NEW3DS, NEW3DSXL, 2DS, 2DSXL, etc.)
+* Any DS that's in the NDS family *(NDS, NDSL, DSi, DSiXL, 3DS, 3DSXL, NEW3DS, NEW3DSXL, 2DS, 2DSXL, etc.)*
 * A way to inject the save. (DSi users can use [ndsi-savedumper](https://github.com/edo9300/ndsi-savedumper) and 3DS users can use [TWLSaveTool](https://github.com/TuxSH/TWLSaveTool/releases).
 ###
 ## Triggering the exploit
@@ -20,8 +21,8 @@ A "Cate West: The Vanishing Files" stack smash exploit for the Nintendo DS that 
 * Click `Open`.
 ###
 ## Support:
-* US version of the game. (EUR version will be supported at a later date)
-* Works with emulators. (no$gba, TWiLightMenu++, etc.)
+* US version of the game. *(EUR version will be supported at a later date)*
+* Works with emulators. *(no$gba, TWiLightMenu++, etc.)*
 ###
 ## FAQ:
 Q: Why another NDS savegame exploit? Aren't they useless?<br>
